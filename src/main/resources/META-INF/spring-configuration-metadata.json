@@ -1,0 +1,120 @@
+{
+  "groups": [
+    {
+      "name": "ftp",
+      "type": "cn.digitlink.ftp.FtpProperties",
+      "sourceType": "cn.digitlink.ftp.FtpProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "ftp.base-path",
+      "type": "java.lang.String",
+      "description": "文件存储路径 默认:/",
+      "sourceType": "cn.digitlink.ftp.FtpProperties"
+    },
+    {
+      "name": "ftp.encoding",
+      "type": "java.lang.String",
+      "description": "编码 默认:UTF-8",
+      "sourceType": "cn.digitlink.ftp.FtpProperties"
+    },
+    {
+      "name": "ftp.host",
+      "type": "java.lang.String",
+      "description": "地址",
+      "sourceType": "cn.digitlink.ftp.FtpProperties"
+    },
+    {
+      "name": "ftp.pool.max-idle",
+      "type": "java.lang.Integer",
+      "description": "最大空闲数 默认:4",
+      "sourceType": "cn.digitlink.ftp.FtpProperties"
+    },
+    {
+      "name": "ftp.pool.max-total",
+      "type": "java.lang.Integer",
+      "description": "最大连接数 默认:8",
+      "sourceType": "cn.digitlink.ftp.FtpProperties"
+    },
+    {
+      "name": "ftp.pool.max-wait-millis",
+      "type": "java.lang.Integer",
+      "description": "最大连接建立等待时间 默认:10000",
+      "sourceType": "cn.digitlink.ftp.FtpProperties"
+    },
+    {
+      "name": "ftp.pool.min-evictable-idle-time-millis",
+      "type": "java.lang.Long",
+      "description": "可被回收的最小空闲时间 默认:600000",
+      "sourceType": "cn.digitlink.ftp.FtpProperties"
+    },
+    {
+      "name": "ftp.pool.min-idle",
+      "type": "java.lang.Integer",
+      "description": "最小空闲数 默认:0",
+      "sourceType": "cn.digitlink.ftp.FtpProperties"
+    },
+    {
+      "name": "ftp.passive-mode",
+      "type": "java.lang.Boolean",
+      "description": "是否被动模式 默认:true",
+      "sourceType": "cn.digitlink.ftp.FtpProperties"
+    },
+    {
+      "name": "ftp.password",
+      "type": "java.lang.String",
+      "description": "密码",
+      "sourceType": "cn.digitlink.ftp.FtpProperties"
+    },
+    {
+      "name": "ftp.port",
+      "type": "java.lang.Integer",
+      "description": "端口",
+      "sourceType": "cn.digitlink.ftp.FtpProperties"
+    },
+    {
+      "name": "ftp.private-key",
+      "type": "java.lang.String",
+      "description": "密钥 默认:",
+      "sourceType": "cn.digitlink.ftp.FtpProperties"
+    },
+    {
+      "name": "ftp.pool.test-on-borrow",
+      "type": "java.lang.Boolean",
+      "description": "获取时检测 默认:true",
+      "sourceType": "cn.digitlink.ftp.FtpProperties"
+    },
+    {
+      "name": "ftp.pool.test-on-return",
+      "type": "java.lang.Boolean",
+      "description": "归还时检测 默认:false",
+      "sourceType": "cn.digitlink.ftp.FtpProperties"
+    },
+    {
+      "name": "ftp.pool.test-while-idle",
+      "type": "java.lang.Boolean",
+      "description": "是否进行空闲检测 默认:true",
+      "sourceType": "cn.digitlink.ftp.FtpProperties"
+    },
+    {
+      "name": "ftp.pool.time-between-eviction-runs-millis",
+      "type": "java.lang.Long",
+      "description": "空闲连接回收线程执行周期 默认:60000",
+      "sourceType": "cn.digitlink.ftp.FtpProperties"
+    },
+    {
+      "name": "ftp.type",
+      "type": "java.lang.String",
+      "description": "类型 ftp、sftp 默认:ftp",
+      "sourceType": "cn.digitlink.ftp.FtpProperties"
+    },
+    {
+      "name": "ftp.username",
+      "type": "java.lang.String",
+      "description": "用户名",
+      "sourceType": "cn.digitlink.ftp.FtpProperties"
+    }
+  ],
+  "hints": []
+}
