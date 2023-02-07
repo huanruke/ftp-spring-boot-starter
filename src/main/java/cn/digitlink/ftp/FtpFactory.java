@@ -3,7 +3,8 @@ package cn.digitlink.ftp;
 import cn.hutool.extra.ftp.AbstractFtp;
 import cn.hutool.extra.ftp.Ftp;
 import cn.hutool.extra.ftp.FtpMode;
-import cn.hutool.extra.ssh.Sftp;
+import cn.hutool.extra.ssh.JschUtil;
+import com.jcraft.jsch.Session;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.pool2.PooledObject;
 import org.apache.commons.pool2.PooledObjectFactory;
@@ -45,7 +46,8 @@ public class FtpFactory implements PooledObjectFactory<AbstractFtp> {
                     ftp = new Ftp(host, port, username, password, charset, null, null, model);
                     break;
                 case "sftp":
-                    ftp = new Sftp(host, port, username, password, charset);
+                    Session session = JschUtil.createSession(host, port, username, password);
+                    ftp = JschUtil.createSftp(session);
                     break;
                 default:
                     throw new IllegalArgumentException("Illegal type of ftp");
